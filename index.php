@@ -13,10 +13,10 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" /> -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <script src="assets/js/tailwind.config.js"></script> -->
-    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
+    <script src="assets/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
 
-    <script>
+    <!-- <script>
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -27,13 +27,13 @@
                 },
             },
         };
-    </script>
+    </script> -->
 
-    <style>
+    <!-- <style>
         html {
             scroll-behavior: smooth;
         }
-    </style>
+    </style> -->
 
 </head>
 
@@ -142,7 +142,7 @@
                             <span class="bg-<?= $result['color'] ?>-100 text-<?= $result['color'] ?>-800 text-sm font-medium me-2 px-2 py-0.5 rounded dark:bg-<?= $result['color'] ?>-900 dark:text-<?= $result['color'] ?>-300"><i class='<?= $result['icon'] ?> pr-1'></i> <?= $result['jenis'] ?></span>
                             <h5 class="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><?= $result['judul'] ?></h5>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><?= $result['deskripsi'] ?></p>
-                            <a href="<?= $result['url'] ?>" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <a href="<?= $result['url'] ?>" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" target="_blank">
                                 Read more
                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -252,7 +252,7 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
-<!-- <script src="assets/js/main.js"></script> -->
+<script src="assets/js/main.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 
@@ -305,33 +305,33 @@
 
 
 
-    const html = document.querySelector("html");
-    const btn = document.querySelector("#theme-toggle");
-    const dark = document.querySelector("#theme-toggle-dark-icon");
-    const light = document.querySelector("#theme-toggle-light-icon");
+    // const html = document.querySelector("html");
+    // const btn = document.querySelector("#theme-toggle");
+    // const dark = document.querySelector("#theme-toggle-dark-icon");
+    // const light = document.querySelector("#theme-toggle-light-icon");
 
-    var current = html.getAttribute("class");
+    // var current = html.getAttribute("class");
 
-    if (current == "light") {
-        light.classList.toggle("hidden");
-    } else {
-        dark.classList.toggle("hidden");
-    }
+    // if (current == "light") {
+    //     light.classList.toggle("hidden");
+    // } else {
+    //     dark.classList.toggle("hidden");
+    // }
 
-    btn.addEventListener("click", function() {
-        var now = html.getAttribute("class");
+    // btn.addEventListener("click", function() {
+    //     var now = html.getAttribute("class");
 
-        light.classList.toggle("hidden");
-        dark.classList.toggle("hidden");
+    //     light.classList.toggle("hidden");
+    //     dark.classList.toggle("hidden");
 
-        if (now == "light") {
-            html.classList.remove("light");
-            html.classList.add("dark");
-        } else {
-            html.classList.remove("dark");
-            html.classList.add("light");
-        }
-    });
+    //     if (now == "light") {
+    //         html.classList.remove("light");
+    //         html.classList.add("dark");
+    //     } else {
+    //         html.classList.remove("dark");
+    //         html.classList.add("light");
+    //     }
+    // });
 </script>
 
 
