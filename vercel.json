@@ -1,16 +1,17 @@
 {
-  "builds": [
-    { "src": "/api/index.php", "use": "vercel-php@0.7.1" },
-    { "src": "/api/assets/**", "use": "@vercel/static" }
-  ],
+  "builds": [{ "src": "/api/index.php", "use": "vercel-php@0.7.1" }],
   "routes": [
-    {
-      "src": "/(css|js|vendor|assets|image)/(.*)",
-      "dest": "/api/assets/$1/$2"
-    },
     {
       "src": "/(.*)",
       "dest": "/api/index.php"
+    },
+    {
+      "src": "assets/image/**",
+      "dest": "/api/assets/image/**"
+    },
+    {
+      "src": "assets/cv.pdf",
+      "dest": "/api/assets/cv.pdf"
     }
   ]
 }
