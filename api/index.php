@@ -113,7 +113,7 @@
                 <!-- Pricing Card -->
 
                 <?php
-                $file = file_get_contents('project.json');
+                $file = file_get_contents('api/project.json');
                 $enc = json_decode($file, true);
                 ?>
                 <?php foreach ($enc as $result) : ?>
