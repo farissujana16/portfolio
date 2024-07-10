@@ -7,14 +7,14 @@
     <title>Faris Syafiq Sujana</title>
 
 
-    <link rel="icon" type="image/x-icon" href="assets/image/icon.ico">
+    <link rel="icon" type="image/x-icon" href="api/assets/image/icon.ico">
 
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" /> -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/js/tailwind.config.js"></script>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="api/assets/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="api/assets/css/main.css">
 
 
 </head>
@@ -23,7 +23,7 @@
     <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="assets/image/logo.png" class="h-8 rounded-full" alt="Flowbite Logo">
+                <img src="api/assets/image/logo.png" class="h-8 rounded-full" alt="Flowbite Logo">
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -87,7 +87,7 @@
             <div class="mt-4 md:mt-0 mb-8">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">About me.</h2>
                 <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">With 2 years of experience, I am a skilled Web Developer with expertise in building and maintaining web applications for diverse business needs. I am proficient in various programming languages, including JavaScript, HTML, CSS, and PHP. My ability to manage MySQL databases, coupled with my familiarity with Linux and Windows operating systems, further enhances my skillset as a versatile web developer.</p>
-                <a href="assets/cv.pdf" class="inline-flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900" download="faris_cv">
+                <a href="api/assets/cv.pdf" class="inline-flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900" download="faris_cv">
                     Download CV
                     <svg class="md:ml-2 ml-2 w-6 h-6 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13V4M7 14H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-2m-1-5-4 5-4-5m9 8h.01" />
@@ -95,8 +95,8 @@
 
                 </a>
             </div>
-            <img class="w-full dark:hidden" src="assets/image/photo.png" alt="dashboard image">
-            <img class="w-full hidden dark:block" src="assets/image/photo.png" alt="dashboard image">
+            <img class="w-full dark:hidden" src="api/assets/image/photo.png" alt="dashboard image">
+            <img class="w-full hidden dark:block" src="api/assets/image/photo.png" alt="dashboard image">
         </div>
     </section>
 
@@ -118,12 +118,12 @@
                 ?>
                 <?php foreach ($enc as $result) : ?>
                     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <img class="rounded-t-lg" src="https://images.unsplash.com/photo-1611343693811-2c235c683f26?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                        <img class="rounded-t-lg" src="<?= $result['image'] ?>" alt="" />
                         <div class="p-5">
                             <span class="bg-<?= $result['color'] ?>-100 text-<?= $result['color'] ?>-800 text-sm font-medium me-2 px-2 py-0.5 rounded dark:bg-<?= $result['color'] ?>-900 dark:text-<?= $result['color'] ?>-300"><i class='<?= $result['icon'] ?> pr-1'></i> <?= $result['jenis'] ?></span>
                             <h5 class="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><?= $result['judul'] ?></h5>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><?= $result['deskripsi'] ?></p>
-                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <a href="<?= $result['url'] ?>" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Read more
                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
