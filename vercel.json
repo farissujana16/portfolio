@@ -1,6 +1,6 @@
 {
   "builds": [
-    { "src": "/api/index.php", "use": "vercel-php@0.7.0" },
+    { "src": "/api/index.php", "use": "vercel-php@0.7.1" },
     { "src": "/api/assets/**", "use": "@vercel/static" }
   ],
   "routes": [
