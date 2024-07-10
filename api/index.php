@@ -13,13 +13,32 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" /> -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/js/tailwind.config.js"></script>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- <script src="assets/js/tailwind.config.js"></script> -->
+    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
 
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 
 </head>
 
 <body>
+
     <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -233,7 +252,7 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
-<script src="assets/js/main.js"></script>
+<!-- <script src="assets/js/main.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 
@@ -281,6 +300,37 @@
             });
         }
 
+    });
+
+
+
+
+    const html = document.querySelector("html");
+    const btn = document.querySelector("#theme-toggle");
+    const dark = document.querySelector("#theme-toggle-dark-icon");
+    const light = document.querySelector("#theme-toggle-light-icon");
+
+    var current = html.getAttribute("class");
+
+    if (current == "light") {
+        light.classList.toggle("hidden");
+    } else {
+        dark.classList.toggle("hidden");
+    }
+
+    btn.addEventListener("click", function() {
+        var now = html.getAttribute("class");
+
+        light.classList.toggle("hidden");
+        dark.classList.toggle("hidden");
+
+        if (now == "light") {
+            html.classList.remove("light");
+            html.classList.add("dark");
+        } else {
+            html.classList.remove("dark");
+            html.classList.add("light");
+        }
     });
 </script>
 
