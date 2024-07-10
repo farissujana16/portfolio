@@ -6,8 +6,8 @@
       "dest": "/api/index.php"
     },
     {
-      "src": "/assets/image/**",
-      "dest": "/api/assets/image/**"
+      "src": "/assets/image/(.*)",
+      "dest": "/api/assets/$1/$2"
     },
     {
       "src": "/assets/cv.pdf",
