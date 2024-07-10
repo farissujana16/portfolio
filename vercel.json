@@ -5,7 +5,7 @@
   ],
   "routes": [
     {
-      "src": "/(css|js|vendor|assets|build)/(.*)",
+      "src": "/(css|js|vendor|assets|image)/(.*)",
       "dest": "/api/assets/$1/$2"
     },
     {
