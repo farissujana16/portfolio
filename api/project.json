@@ -6,7 +6,7 @@
     "jenis": "Front-End",
     "icon": "bx bx-code-alt",
     "color": "blue",
-    "image": "api/assets/image/SkillHub.jpg",
+    "image": "assets/image/SkillHub.jpg",
     "url": "https://skill-hub-chi.vercel.app/"
   }
 ]

@@ -7,14 +7,14 @@
     <title>Faris Syafiq Sujana</title>
 
 
-    <link rel="icon" type="image/x-icon" href="api/assets/image/icon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/image/icon.ico">
 
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" /> -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="api/assets/js/tailwind.config.js"></script>
-    <link rel="stylesheet" href="api/assets/css/main.css">
+    <script src="assets/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
 
 
 </head>
@@ -23,7 +23,7 @@
     <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="api/assets/image/logo.png" class="h-8 rounded-full" alt="Flowbite Logo">
+                <img src="assets/image/logo.png" class="h-8 rounded-full" alt="Flowbite Logo">
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -87,7 +87,7 @@
             <div class="mt-4 md:mt-0 mb-8">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">About me.</h2>
                 <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">With 2 years of experience, I am a skilled Web Developer with expertise in building and maintaining web applications for diverse business needs. I am proficient in various programming languages, including JavaScript, HTML, CSS, and PHP. My ability to manage MySQL databases, coupled with my familiarity with Linux and Windows operating systems, further enhances my skillset as a versatile web developer.</p>
-                <a href="api/assets/cv.pdf" class="inline-flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900" download="faris_cv">
+                <a href="assets/cv.pdf" class="inline-flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900" download="faris_cv">
                     Download CV
                     <svg class="md:ml-2 ml-2 w-6 h-6 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13V4M7 14H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-2m-1-5-4 5-4-5m9 8h.01" />
@@ -95,8 +95,8 @@
 
                 </a>
             </div>
-            <img class="w-full dark:hidden" src="api/assets/image/photo.png" alt="dashboard image">
-            <img class="w-full hidden dark:block" src="api/assets/image/photo.png" alt="dashboard image">
+            <img class="w-full dark:hidden" src="assets/image/photo.png" alt="dashboard image">
+            <img class="w-full hidden dark:block" src="assets/image/photo.png" alt="dashboard image">
         </div>
     </section>
 
@@ -113,7 +113,7 @@
                 <!-- Pricing Card -->
 
                 <?php
-                $file = file_get_contents('api/project.json');
+                $file = file_get_contents('project.json');
                 $enc = json_decode($file, true);
                 ?>
                 <?php foreach ($enc as $result) : ?>
