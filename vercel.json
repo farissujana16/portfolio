@@ -1,9 +1,8 @@
 {
-  "functions": {
-    "api/index.php": {
-      "runtime": "vercel-php@0.7.1"
-    },
-    "api/assets/**": { "runtime": "vercel-php@0.7.1" }
-  },
-  "public": true
+  "builds": [
+    { "src": "/api/index.php", "use": "vercel-php@0.7.1" },
+    { "src": "/api/project.json", "use": "@vercel/static" },
+    { "src": "/api/assets/image/**", "use": "@vercel/static" },
+    { "src": "/api/assets/**", "use": "@vercel/static" }
+  ]
 }
