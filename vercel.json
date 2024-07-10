@@ -6,11 +6,11 @@
       "dest": "/api/index.php"
     },
     {
-      "src": "assets/image/**",
+      "src": "/assets/image/**",
       "dest": "/api/assets/image/**"
     },
     {
-      "src": "assets/cv.pdf",
+      "src": "/assets/cv.pdf",
       "dest": "/api/assets/cv.pdf"
     }
   ]
