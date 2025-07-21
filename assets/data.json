@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "title": "Bus Ticket Management",
+      "platform": "web",
+      "image": "assets/image/project/web/tiket.jpg",
+      "description": "Helps streamline bus operations by managing schedules, routes, and ticket prices. Simple, efficient, and user-friendly for both operators and customers.",
+      "technologies": ["Laravel", "MySQL"]
+    },
+    {
+      "title": "Bus Ticket",
+      "platform": "mobile",
+      "image": "assets/image/project/mobile/ticket_mobile.jpg",
+      "description": "Manage bus schedules, routes, and tickets easily. Fast and user-friendly on the go.",
+      "technologies": ["Flutter", "REST API"]
+    }
+  ]
+}

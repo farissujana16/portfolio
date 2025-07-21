@@ -1,9 +1,11 @@
 body {
   font-family: "Poppins";
+  background-color: #fafafa;
 }
 
 .card {
   border-radius: 15px !important;
+  /* background-color: #fafafa; */
   border: none !important;
 }
 
@@ -30,15 +32,35 @@ body {
   background-color: white;
 }
 
+.img-card {
+  border-radius: 9px;
+}
+
 .description {
   font-size: small;
   text-align: justify;
   color: #8592a3;
 }
 
+.project-desc {
+  display: block;
+  word-break: break-word;
+}
+
+@media (max-width: 576px) {
+  .project-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 .nav {
-  background-color: #f8f8f8 !important;
+  background-color: #f1f1ef !important;
   border-radius: 10px;
+  padding: 7px 7px 7px 7px !important;
 }
 
 .nav-pills .nav-link.active,
@@ -47,7 +69,7 @@ body {
   background-color: white;
   color: black;
   box-shadow: 0 2px 4px 0 rgba(63, 63, 76, 0.2);
-  border-radius: 10px !important;
+  border-radius: 5px !important;
 }
 .nav-pills .nav-link:not(.active, .disabled) {
   color: #566a7f;
@@ -74,7 +96,7 @@ body {
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-color: #fff;
+  background-color: #fafafa;
   padding: 10px 0;
 }
 
@@ -104,12 +126,12 @@ body {
 
 .fade-left {
   left: 0;
-  background: linear-gradient(to right, white 0%, transparent 100%);
+  background: linear-gradient(to right, #fafafa 0%, transparent 100%);
 }
 
 .fade-right {
   right: 0;
-  background: linear-gradient(to left, white 0%, transparent 100%);
+  background: linear-gradient(to left, #fafafa 0%, transparent 100%);
 }
 
 /* Animasi */
@@ -173,4 +195,9 @@ body {
 .bg-label-dark {
   background-color: #dcdfe1 !important;
   color: #233446 !important;
+}
+
+.bg-label-blue {
+  background-color: #e4eefb !important;
+  color: #0b61d2 !important;
 }
